@@ -39,6 +39,10 @@ app.use("/api/auth", authRouter);
 app.use("/api/profile", profileRouter);
 app.use("/api/post", postRouter);
 
+// Silence browser's automatic favicon requests
+app.get("/favicon.ico", (req, res) => res.sendStatus(204));
+app.get("/favicon.png", (req, res) => res.sendStatus(204));
+
 
 
 // Start server
