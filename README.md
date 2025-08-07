@@ -38,8 +38,8 @@ A lightweight community platform similar to LinkedIn, where users can register, 
 
 You can register your own account or use demo credentials:
 
-- **Email**: `demo@user.com`
-- **Password**: `demo1234`
+- **Email**: `tanya@gmail.com`
+- **Password**: `tanya123`
 
 ---
 
@@ -144,3 +144,4 @@ Let me know if you'd like me to:
 
 Once confirmed, I can also generate this as a downloadable `.md` file.
 ```
+
