@@ -14,13 +14,10 @@ connectDB();
 
 // Middlewares
 app.use(cookieParser());
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://final-internshala-client.vercel.app",
-];
+
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: "http://localhost:5173",
   credentials: true,
 }));
 
@@ -38,10 +35,6 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authRouter);
 app.use("/api/profile", profileRouter);
 app.use("/api/post", postRouter);
-
-// Silence browser's automatic favicon requests
-app.get("/favicon.ico", (req, res) => res.sendStatus(204));
-app.get("/favicon.png", (req, res) => res.sendStatus(204));
 
 
 
